@@ -7,6 +7,7 @@ import moment from "moment";
 import ChatSettings from "@/components/ChatSettings";
 import {useEffect, useRef} from "react";
 import useWebSocket, {ReadyState} from "react-use-websocket";
+import App from "./ChatInputBox/LexicalEditor/App";
 
 function removeBrackets(str) {
     return str.replace(/[\[\](){}<>]/g, '');
@@ -214,6 +215,9 @@ export default function Chat() {
                     </div>
                     <div className="w-full">
                         <ChatInputBox inputTags={tagsData} onMessageSend={onMessageSend} tagValueAccessor="name"/>
+                        <div>
+                            <App/>
+                        </div>
                     </div>
                 </div>
             </div>

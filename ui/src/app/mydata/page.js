@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import {Button} from "@/components/ui/button"
 import {FileIcon, GitHubLogoIcon, PlusIcon, TrashIcon} from "@radix-ui/react-icons"
 import {
